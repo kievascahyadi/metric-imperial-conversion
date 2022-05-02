@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+    <body>
+        <div class="upbox">
+            <span id="title-text">Metric/Imperial Unit Conversion</span>
+            <h1 id="amount">0</h2>
+            <div class="input">
+                <input type="text" id="input-space" onclick="resetvalue()" value="type here"></input>
+            </div>
+            <button id="btn" onclick="calculation()">Calculate</button>
+        </div>
+        <div class="downbox">
+            <div class="unit-container">
+                <p class="unit-name">
+                    Length (Meter/Feet)
+                </p>
+                <p class="unit-detail">
+                    <span id="length-meter">0</span> meters = <span id="length-feet">0</span> feet / 
+                    <span id="length-feet2">0</span> feet = <span id="length-meter2">0</span> meters
+                </p>
+            </div>
+            <div class="unit-container">
+                <p class="unit-name">
+                    Volume (Liters/Gallons)
+                </p>
+                <p class="unit-detail">
+                    <span id="volume-liter">0</span> Liters = <span id="volume-gallon">0</span> Gallons / 
+                    <span id="volume-gallon2">0</span> Gallons = <span id="volume-liter2">0</span> Liters
+                </p>
+            </div>
+            <div class="unit-container">
+                <p class="unit-name">
+                    Mass (Kilogram/Pounds)
+                </p>
+                <p class="unit-detail">
+                    <span id="mass-kilo">0</span> Kilos = <span id="mass-pound">0</span> Pounds / 
+                    <span id="mass-pound2">0</span> Pounds = <span id="mass-kilo2">0</span> Kilos
+                </p>
+            </div>
+        </div>
+        <div class="social">
+            <a href="https://kievas-profile.netlify.app">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12m2.557 16h-5.115c.546 2.46 1.441 4.114 2.558 5.744 1.194-1.741 2.041-3.41 2.557-5.744m-7.157 0h-4.567c1.236 2.825 3.704 4.972 6.755 5.716-1.048-1.733-1.783-3.658-2.188-5.716m13.767 0h-4.567c-.391 1.988-1.095 3.887-2.175 5.694 3.012-.763 5.517-2.895 6.742-5.694m-14.005-6h-4.962c-.267 1.313-.267 2.685 0 4h4.915c-.119-1.329-.101-2.672.047-4m7.661 0h-5.647c-.165 1.326-.185 2.672-.053 4h5.753c.133-1.328.111-2.673-.053-4m6.977 0h-4.963c.148 1.328.166 2.671.048 4h4.915c.26-1.285.273-2.648 0-4m-12.156-7.729c-3.077.732-5.567 2.886-6.811 5.729h4.653c.435-2.042 1.178-3.985 2.158-5.729m2.355-.048c-1.089 1.77-1.91 3.453-2.463 5.777h4.927c-.534-2.246-1.337-3.948-2.464-5.777m2.368.069c1.013 1.812 1.733 3.76 2.146 5.708h4.654c-1.232-2.816-3.762-4.958-6.8-5.708"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/kievasc">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg>
+            </a>
+        </div>
+    </body>
+
+    <script src="index.js"></script>
+</html>
